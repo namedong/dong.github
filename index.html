@@ -23,6 +23,16 @@
 			
 		}
 		
+		.photo_div {
+			width: 100%;
+			height: 800px;
+		}
+		
+		div img {
+			height: 100%;
+			width: 100%;
+		}
+		
 		</style>
 	</head>
 	<body>
@@ -32,9 +42,42 @@
 			<a href="login.html">没有账号？注册一个</a>
 		</div>
 		
+	<br>
+	</div>
+	
+	<div class="photo_div">
+		<img src="./img/lunbo_1.jpg" id="photo" >
 		
 	</div>
 		
 		
 	</body>
+	
+	
+	<!--轮播图JS 代码-->
+	<script type="text/javascript">
+		var num=1;
+		
+		//获取照片对象
+		function lunbo()
+		{
+			num++;
+			if(num>3)
+			{
+				num=1;
+			}else 
+			{
+				var photo = document.getElementById("photo");
+				photo.src = "./img/lunbo_"+num+".jpg";
+			}
+			
+		}
+		
+		//在定时器中调用定义的方法
+		setInterval(lunbo,3000);
+		
+		
+		
+		
+	</script>
 </html>
