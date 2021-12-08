@@ -20,3 +20,16 @@
     text-align: center;
     line-height: 35px;
 }
+
+.jx {
+    border-bottom: 2px solid #ffc900;
+    padding: 5px;
+}
+
+.footertext{
+    height: 40px;
+    background-color: #ffc900;
+    text-align: center;
+    line-height:40px ;
+    font-size: 8px;
+}
